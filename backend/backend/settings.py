@@ -19,7 +19,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '%2!ynj8+q!3a6ncn4-$w7*6z(@#)+3w@$a8ristd*^zfj*tcpw'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -111,23 +110,13 @@ TEMPLATES = [
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'd2LpN4RzWV',
-        'USER': 'd2LpN4RzWV',
-        'PASSWORD': 'BtvGU5nsPJ',
-        'HOST': 'remotemysql.com',
-        'PORT': '3306',
-    }
-}
 
 '''
 #used for unit test cases
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'd2LpN4RzWV',
+        'NAME': '####',
         'USER': 'root',
         'HOST': 'localhost',
         'PORT': '3306',
@@ -178,7 +167,7 @@ STATIC_URL = '/static/'
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
-EMAIL_HOST_USER = 'cs308.s21t8@gmail.com'
-EMAIL_HOST_PASSWORD = 'cs308.s21t8@!)'
+EMAIL_HOST_USER = '####'
+EMAIL_HOST_PASSWORD = '####'
 EMAIL_USE_TLS = True
 EMAIL_USE_SSL = False
